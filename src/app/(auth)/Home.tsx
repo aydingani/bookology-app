@@ -11,8 +11,7 @@ import {
 } from 'react-native'
 import axios from 'axios'
 import { Ionicons } from '@expo/vector-icons'
-// import { useNavigation } from '@react-navigation/native'
-import { useBookmarks } from './BookmarksContext'
+import { useBookmarks } from '../BookmarksContext'
 import { GOOGLE_BOOKS_API_KEY } from '@env'
 
 interface Book {
@@ -30,7 +29,6 @@ interface Book {
 }
 
 export default function Home() {
-  // const navigation = useNavigation()
   const [searchQuery, setSearchQuery] = useState('')
   const [books, setBooks] = useState<Book[]>([])
   const { bookmarks, addBookmark } = useBookmarks()

@@ -37,7 +37,6 @@ export const BookmarksProvider: React.FC<{ children: ReactNode }> = ({
   const [bookmarks, setBookmarks] = useState<Book[]>([])
 
   useEffect(() => {
-    // Load bookmarks from AsyncStorage when the component mounts
     const loadBookmarks = async () => {
       try {
         const storedBookmarks = await AsyncStorage.getItem('bookmarks')

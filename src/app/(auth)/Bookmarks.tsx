@@ -6,7 +6,7 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native'
-import { useBookmarks } from './BookmarksContext'
+import { useBookmarks } from '../BookmarksContext'
 import { Ionicons } from '@expo/vector-icons'
 
 export default function Bookmarks() {
