@@ -25,7 +25,6 @@ const AIChat: React.FC = () => {
 
   useEffect(() => {
     loadMessages()
-    // fetchOpenAIKey()
   }, [])
 
   const loadMessages = async () => {
@@ -38,16 +37,6 @@ const AIChat: React.FC = () => {
       console.error('Error loading messages:', error)
     }
   }
-
-  // const fetchOpenAIKey = async () => {
-  //   try {
-  //     const response = await fetch('/api/keys?key=openai')
-  //     const data = await response.json()
-  //     setOpenAIKey(data.key)
-  //   } catch (error) {
-  //     console.error('Error fetching OpenAI key:', error)
-  //   }
-  // }
 
   const saveMessages = async (updatedMessages: Message[]) => {
     try {
